@@ -1,3 +1,15 @@
+In this project i converted the java-app to jar file and run it in a container. 
+then i wrote a deplpyment and service to run this image. with the use of mysql database which connected to a configmap to take the parameters.
+
+HOW TO RUN:
+
+kubectl apply -f deployment.yml -f service.yml -f config_map.yml
+then use the command kubectl get services to acccess the port it gives on local host.
+
+
+
+
+
 # Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=main)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
 ## Understanding the Spring Petclinic application with a few diagrams
